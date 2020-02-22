@@ -10,6 +10,7 @@ def job():
     for data in datas:
         with open(data) as f:
             s = f.read()
+            f.close()
             print(s)
             os.remove(data)
 
